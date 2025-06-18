@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Raccoon Study</title>
+  <link rel="stylesheet" href="metodos.css">
+</head>
+<body>
+
+  <!-- Barra verde superior -->
+  <div class="top-bar">
+    <div class="logo-circle">
+      <img src="logo.png" alt="Logo">
+    </div>
+
+    <div class="search-container">
+      <input type="text" placeholder="Buscar...">
+    </div>
+
+    <!-- Menú desplegable de aplicaciones -->
+    <div class="icons">
+      <div class="user-icon">👤</div>
+      <div class="app-grid" id="appToggle">☰</div>
+    </div>
+  </div>
+
+  <!-- Menú principal -->
+   <nav class="navbar">
+    <ul class="menu">
+      <li class="dropdown">
+        <a href="#">📚 Libros</a>
+        <div class="dropdown-content">
+          <a href="#">Español</a>
+          <a href="#">Matemáticas</a>
+          <a href="#">Inglés</a>
+          <a href="#">Historia</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">📖 Métodos de estudio</a>
+        <div class="dropdown-content">
+          <a href="#">Mapas mentales</a>
+          <a href="#">Fichas</a>
+          <a href="#">Resumen</a>
+          <a href="#">Técnicas</a>
+        </div>
+      </li>
+         <li class="dropdown">
+        <a href="#">📖 Herramientas de organización</a>
+        <div class="dropdown-content">
+          <a href="#">ToDo</a>
+          <a href="#">Flashcard</a>
+          <a href="#">Google keep</a>
+          <a href="#">OneNote</a>
+          <a href="#">Notion</a>
+          <a href="#">TeamBook</a>
+          <a href="#">Trello</a>
+          <a href="#">Evernote</a>
+          <a href="#">Tickly</a>
+          <a href="#">Calendly</a>
+          <a href="#">TickTick</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">📍 Lugares de estudio</a>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Estudiante/OneDrive%20-%20Programa%20%C2%A1Sup%C3%A9rate!/Documents/Jhulianys-Urriola/Expo/kotowa.html">Kotowa</a>
+          <a href="#">Anawa</a>
+          <a href="#">Biblioteca</a>
+          <a href="#">Universidad</a>
+        </div>
+      </li>
+     <li class="dropdown">
+        <a href="#">📲 Aplicaciones</a>
+        <div class="dropdown-content">
+          <a href="https://outlook.live.com" target="_blank">Outlook</a>
+          <a href="https://teams.microsoft.com" target="_blank">Teams</a>
+          <a href="https://todo.microsoft.com" target="_blank">To Do</a>
+          <a href="https://maps.google.com" target="_blank">Maps</a>
+          <a href="https://genially.com/es/" target="_blank">Genially</a>
+          <a href="https://www.microsoft.com" target="_blank">Copilot</a>
+          <a href="https://onedrive.live.com/" target="_blank">One Drive</a>
+          <a href="https://www.microsoft.com/en-us/microsoft-365/word" target="_blank">Word</a>
+        </div>
+      </li>
+      <li><a href="#">🎮 Entretenimiento</a></li>
+      <li><a href="#">💬 ¡Conócenos!</a></li>
+    </ul>
+  </nav>
+
+<!-- Sección de Métodos de Estudio -->
+<section class="study-methods">
+    <h2>📖 Métodos de Estudio</h2>
+    <div class="cards-section">
+        <!-- Primera fila -->
+        <div class="card">
+            <img src="https://marketplace.canva.com/EAF5YYvonQQ/2/0/1600w/canva-mapa-conceptual-lluvia-de-ideas-doodle-colorido-beige-lVp4TzCouyc.jpg" alt="Mapas Mentales">
+            <h3>Mapas Mentales</h3>
+            <p>Organiza ideas de forma visual.</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <a href="mapas-mentales.html" class="read-button">Ver más</a>
+        </div>
+        <div class="card">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqHNiuUnNFNITSGq80YLSRNREJgEqUGJSudIpblfCHcatoGtHr86ilpYvOj8196WEpuzLQNLtcw1j2q8vMbWn9Innycv3b7wdvk0_KcdR5zg89f5qvoI92r_e4mm60vjWkFbellsqz/s1600/1173-06f48270-5410-478e-8210-04f44be507f6_m.jpg" alt="Fichas de Estudio">
+            <h3>Fichas de Estudio</h3>
+            <p>Tarjetas con conceptos clave.</p>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <a href="fichas.html" class="read-button">Ver más</a>
+        </div>
+        <div class="card">
+            <img src="https://crehana-blog.imgix.net/media/filer_public/94/3b/943be074-7c0f-49db-8497-388b85afeedd/vinetas-resumen-creativo.jpeg?auto=format&q=50" alt="Resumen">
+            <h3>Resúmenes</h3>
+            <p>Condensa la información esencial.</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <a href="resumen.html" class="read-button">Ver más</a>
+        </div>
+    </div>
+
+    <!-- Segunda fila -->
+    <div class="cards-section">
+        <div class="card">
+            <img src="https://media.licdn.com/dms/image/v2/D4E12AQEwzsu_iNhDrA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1684851079391?e=2147483647&v=beta&t=dUuPkNdbPGd-KrRU33WFVDDrSwo-oU12k--5i7YRkf4" alt="Técnica Pomodoro">
+            <h3>Técnica Pomodoro</h3>
+            <p>Estudia en bloques de tiempo.</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <a href="pomodoro.html" class="read-button">Ver más</a>
+        </div>
+        <div class="card">
+            <img src="https://images.desenio.com/zoom/16686_4-57867.jpg" alt="Organización con Planner">
+            <h3>Planner y Organización</h3>
+            <p>Planifica tus tareas de estudio.</p>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <a href="planner.html" class="read-button">Ver más</a>
+        </div>
+        <div class="card">
+            <img src="https://marketplace.canva.com/EAGDKiz7U14/1/0/1131w/canva-documento-a4-grafico-mapa-conceptual-ideas-multicolor-qAop85vCbFQ.jpg" alt="Esquemas Visuales">
+            <h3>Esquemas Visuales</h3>
+            <p>Diagramas para estructurar ideas.</p>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <a href="esquemas.html" class="read-button">Ver más</a>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Síguenos en redes sociales</p>
+    <div class="social">
+      <a href="#"><img src="https://img.icons8.com/fluency/32/instagram-new.png" alt="Instagram"></a>
+      <a href="#"><img src="https://img.icons8.com/fluency/32/facebook-new.png" alt="Facebook"></a>
+      <a href="#"><img src="https://img.icons8.com/fluency/32/twitter.png" alt="Twitter"></a>
+    </div>
+    <p>&copy; 2025 Thinking Raccoon. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>

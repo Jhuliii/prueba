@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entretenimiento</title>
+  <link rel="stylesheet" href="entretenimiento.css">
+</head>
+<body>
+ 
+  <div class="top-bar">
+    <div class="logo-circle">
+      <img src="c:\Users\Estudiante\Downloads\Logo_Estudio_de_Diseño_Circular_Femenino_Rosa_y_Negro__1_-Photoroom-removebg-preview.png">
+    </div>
+ 
+    <div class="search-container">
+      <input type="text" placeholder="Buscar...">
+    </div>
+ 
+    <div class="icons">
+      <div class="user-icon">👤</div>
+      <div class="app-grid" id="appToggle">☰</div>
+      <ul class="app-box dropdown-content" id="appBox">
+        <li>
+          <a href="https://outlook.live.com" target="_blank">
+            <img src="https://img.icons8.com/fluency/48/000000/outlook.png" alt="Outlook">
+            <span>Outlook</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://teams.microsoft.com" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/microsoft-teams.png" alt="Teams">
+            <span>Teams</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://todo.microsoft.com" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/todo-list.png" alt="To Do">
+            <span>To Do</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://maps.google.com" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/google-maps.png" alt="Maps">
+            <span>Maps</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+ 
+  <!-- Menú principal -->
+  <nav class="navbar">
+    <ul class="menu">
+      <li class="dropdown">
+        <a href="#">📚 Libros</a>
+        <div class="dropdown-content">
+          <a href="#">Español</a>
+          <a href="#">Matemáticas</a>
+          <a href="#">Inglés</a>
+          <a href="#">Historia</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">📖 Métodos de Estudio</a>
+        <div class="dropdown-content">
+          <a href="#">Mapas mentales</a>
+          <a href="#">Fichas</a>
+          <a href="#">Resumen</a>
+          <a href="#">Técnicas</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">📍 Lugares de estudio</a>
+        <div class="dropdown-content">
+          <a href="#">Kotowa</a>
+          <a href="#">Anawa</a>
+          <a href="#">Biblioteca</a>
+          <a href="#">Universidad</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">📲 Aplicaciones</a>
+        <div class="dropdown-content">
+          <a href="https://outlook.live.com" target="_blank">Outlook</a>
+          <a href="https://teams.microsoft.com" target="_blank">Teams</a>
+          <a href="https://todo.microsoft.com" target="_blank">To Do</a>
+          <a href="https://maps.google.com" target="_blank">Maps</a>
+        </div>
+      </li>
+      <li><a href="#" class="active">🎮 Entretenimiento</a></li>
+      <li><a href="#">💬 ¡Conócenos!</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- Contenido -->
+  <main class="content">
+    <section class="contenido">
+      <div class="juego">
+        <iframe src="https://html5games.com/" frameborder="0" width="100%" height="400px"></iframe>
+      </div>
+ 
+      <div class="comentarios">
+        <h2>Comentarios</h2>
+        <div id="disqus_thread"></div>
+        <script>
+          var disqus_config = function () {
+            this.page.url = window.location.href;  
+            this.page.identifier = "pacman-juego";
+          };
+          (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://tu-shortname.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Síguenos en redes sociales</p>
+    <div class="social">
+      <a href="#"><img src="https://img.icons8.com/fluency/32/000000/instagram-new.png" alt="Instagram"></a>
+      <a href="#"><img src="https://img.icons8.com/fluency/32/000000/facebook-new.png" alt="Facebook"></a>
+      <a href="#"><img src="https://img.icons8.com/fluency/32/000000/twitter.png" alt="Twitter"></a>
+    </div>
+    <p>&copy; 2025 Thinking Raccoon. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

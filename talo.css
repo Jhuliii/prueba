@@ -1,0 +1,275 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #418b84;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search-container input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  width: 250px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.user-icon,
+.app-grid {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* App dropdown */
+.app-box {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 240px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.app-box.show {
+  display: grid;
+}
+
+.app-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.app-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.app-icon:hover {
+  transform: scale(1.1);
+  color: #418b84;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #d0f0ec;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: #004c45;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #b2e2db;
+  border-radius: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-width: 150px;
+  z-index: 5;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  display: block;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #d0f0ec;
+}
+
+/* Contenido */
+.content {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(to right, #218a85, #61c0bf); /* Verde agua degradado */
+  text-align: center;
+  padding: 20px;
+  color: #ffffff; /* Letra blanca */
+  font-size: 20px; /* Tamaño aumentado */
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer .social {
+  margin: 10px 0;
+}
+
+.footer img {
+  margin: 0 8px;
+}
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+.stars {
+  color: gold;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+/* Sección de Aplicaciones Recomendadas */
+.apps-section {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.apps-section h2 {
+  color: #004c45;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.app-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.app-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.app-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.app-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+.app-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.app-card p {
+  font-size: 14px;
+  color: #666;
+}
+
